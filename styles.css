@@ -179,9 +179,6 @@ html {
   text-transform: uppercase;
   display: block;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.main-list_black {
   color: var(--menu-color);
 }
 
@@ -276,9 +273,6 @@ html {
   animation-timing-function: linear;
   animation-fill-mode: backwards;
   animation-delay: 1000ms;
-}
-
-.banner__teal {
   background-color: var(--transformation-color);
   color: var(--color-type);
 }
@@ -323,6 +317,9 @@ html {
 .items__item {
   margin-right: 30px;
   width: 255px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .items__item:last-child {
@@ -341,34 +338,24 @@ html {
   margin-bottom: 30px;
 }
 
-.sun::before {
+.items__item--sun::before {
   content: url(images/sun.png);
-  display: flex;
   padding-bottom: 50px;
-
-  justify-content: center;
 }
 
-.safe::before {
+.items__item--safe::before {
   content: url(images/safe.png);
-  display: flex;
   padding-bottom: 65px;
-
-  justify-content: center;
 }
 
-.web::before {
+.items__item--web::before {
   content: url(images/web.png);
-  display: flex;
   padding-bottom: 60px;
-  justify-content: center;
 }
 
-.compass::before {
+.items__item--compass::before {
   content: url(images/compass.png);
-  display: flex;
   padding-bottom: 52px;
-  justify-content: center;
 }
 
 .content__paragraph {
@@ -512,7 +499,7 @@ html {
   cursor: pointer;
 }
 
-.overlay-list__big {
+.overlay-list__buttom--big {
   padding: 0;
   border: 1px solid rgb(255, 255, 255);
   width: 165px;
@@ -531,17 +518,17 @@ html {
   padding-left: 40px;
 }
 
-.overlay-list__heart {
+.overlay-list__buttom--heart {
   background-image: url(images/heart.png);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.overlay-list__arrows {
+.overlay-list__buttom--arrows {
   background-image: url(images/arrows.png);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.overlay-list__clock {
+.overlay-list__buttom--clock {
   background-image: url(images/clock.png);
   background-color: rgba(0, 0, 0, 0.4);
 }
